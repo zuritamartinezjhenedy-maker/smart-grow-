@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Panel de Control</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+
+<div class="banner">
+
+<img src="img/carpa.jpg" alt="Carpa de cultivo">
+
+</div>
+
+<h1>🌱 Sistema Inteligente de Riego</h1>
+
+</header>
+
+<div class="contenedor">
+
+<div class="card">
+
+<h3>💧 Humedad del Suelo</h3>
+
+<h1 id="humedad">65%</h1>
+
+</div>
+
+<div class="card">
+
+<h3>🌡️ Temperatura</h3>
+
+<h1 id="temperatura">24°C</h1>
+
+</div>
+
+<div class="card">
+
+<h3>🚰 Estado de la Bomba</h3>
+
+<h1 id="bomba">APAGADA</h1>
+
+</div>
+
+<div class="card">
+
+<h3>📶 Bluetooth</h3>
+
+<h1 id="bluetooth">Desconectado</h1>
+
+</div>
+
+</div>
+
+<div class="botones">
+
+<button onclick="conectarBluetooth()">
+
+📶 Conectar Bluetooth
+
+</button>
+
+<button onclick="encenderRiego()">
+
+💧 Encender Riego
+
+</button>
+
+<button onclick="apagarRiego()">
+
+⛔ Apagar Riego
+
+</button>
+
+</div>
+
+<div class="grafico">
+
+<canvas id="grafica"></canvas>
+
+</div>
+
+<h2 id="hora"></h2>
+
+<script src="script.js"></script>
+...
+
+<script src="script.js"></script>
+
+<!-- Botón de modo oscuro -->
+<div class="modo" onclick="modoOscuro()">
+    🌙
+</div>
+
+</body>
+</html>
+
+</body>
+
+</html>
+<div class="estado">
+
+<div class="panel">
+
+<h2>🥬 Cultivos monitoreados</h2>
+
+<ul>
+
+<li>🥬 Lechuga</li>
+
+<li>🍅 Tomate</li>
+
+<li>🥕 Zanahoria</li>
+
+<li>🌶️ Pimiento</li>
+
+<li>🥬 Acelga</li>
+
+<li>🧅 Cebolla</li>
+
+</ul>
+
+</div>
+
+<div class="panel">
+
+<h2>💦 Nivel del tanque</h2>
+
+<div class="barra">
+
+<div id="agua"></div>
+
+</div>
+
+<h3 id="porcentajeAgua">85%</h3>
+
+</div>
+
+</div>
+
+<div class="historial">
+
+
+<h2>📋 Historial de Riegos</h2>
+
+<table>
+
+<tr>
+
+<th>Hora</th>
+
+<th>Acción</th>
+
+</tr>
+
+<tbody id="tabla">
+
+</tbody>
+
+</table>
+
+</div>
